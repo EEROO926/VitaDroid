@@ -38,7 +38,7 @@ set(VITA_MKSFOEX_FLAGS "${VITA_MKSFOEX_FLAGS} -d PARENTAL_LEVEL=1")
 
 # Add any additional include paths here
 include_directories(
-  ../common # This is for debugScreenPrintf(), you shouldn't need it in your projects
+  third_party/vitasdk-common # This is for debugScreenPrintf(), you shouldn't need it in your projects
 )
 
 # Add any additional library paths here
@@ -51,7 +51,7 @@ link_directories(
 # Add all the files needed to compile here
 add_executable(${PROJECT_NAME}
   src/main.c
-  ../common/debugScreen.c
+  third_party/vitasdk-common/debugScreen.c
 )
 
 # Library to link to (drop the -l prefix). This will mostly be stubs.

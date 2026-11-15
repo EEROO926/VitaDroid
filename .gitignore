@@ -8,3 +8,9 @@ tests/*.apk
 *.vpk
 *.self
 *.velf
+
+# Local project files
+Makefile
+*.backup
+*.backup.*
+*.backup.c
