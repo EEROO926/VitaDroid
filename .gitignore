@@ -1,0 +1,10 @@
+build/
+build-debug/
+build-*/
+backups/
+releases/
+tests/host_analyzer
+tests/*.apk
+*.vpk
+*.self
+*.velf
