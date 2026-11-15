@@ -27,7 +27,7 @@ set(VITA_APP_NAME "VitaDroid")
 # unique string of developer and Y = a unique number for this app
 set(VITA_TITLEID  "VDRO00001")
 # Optional version string to show in LiveArea's more info screen
-set(VITA_VERSION  "00.20")
+set(VITA_VERSION  "00.30")
 
 ## Flags and includes for building
 # Note that we make sure not to overwrite previous flags
@@ -51,6 +51,7 @@ link_directories(
 # Add all the files needed to compile here
 add_executable(${PROJECT_NAME}
   src/main.c
+  src/apk_analyzer.c
   third_party/vitasdk-common/debugScreen.c
 )
 
